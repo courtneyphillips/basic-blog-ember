@@ -7,7 +7,6 @@
       <label for="title">Title</label>
       {{input id="title" class="form-control" value=title}}
     </div>
-
     <div class="form-group">
       <label for="body">Body</label>
       {{textarea id="body" class="form-control" rows="15" value=body}}
@@ -18,7 +17,6 @@
 {{else}}
 
   <p>{{body}}</p>
-
   <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
 
 {{/if}}

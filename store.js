@@ -9,6 +9,11 @@ var posts = [
 
 { id: '3',
   title: "Thievery",
-  body: "Every scrap of paper was gone, and with it all my notes, my memoranda, relating to railways and travel, my letter of credit, in fact all that might be useful to me were I once outside the castle. I sat and pondered awhile, and then some thought occurred to me, and I made search of my portmanteau and in the wardrobe where I had placed my clothes." } ];
+  body: "Every scrap of paper was gone, and with it all my notes, my memoranda, relating to railways and travel, my letter of credit, in fact all that might be useful to me were I once outside the castle. I sat and pondered awhile, and then some thought occurred to me, and I made search of my portmanteau and in the wardrobe where I had placed my clothes." },
+
+  { id: '4',
+  title: "The Count",
+  body: "I have given the letters. I threw them through the bars of my window with a gold piece, and made what signs I could to have them posted. The man who took them pressed them to his heart and bowed, and then put them in his cap. I could do no more. I stole back to the study, and began to read. As the Count did not come in, I have written here." },
+  ];
 
 var comments = [ { id: '1', postId: '3', text: 'What a shame!' }, { id: '2', postId: '3', text: 'I am so sorry. How are you feeling now?' }, { id: '3', postId: '1', text: 'I love blodd too!' }, { id: '4', postId: '1', text: 'Eeew, blood is gross.' }, { id: '5', postId: '2', text: 'This all sounds so mysterious.' } ]
