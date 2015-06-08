@@ -1,11 +1,14 @@
-<div class="container">
-  <nav class='navbar navbar-default' role='navigation'>
-    <ul class='nav navbar-nav'>
-      <li>{{#link-to 'posts'}}Posts{{/link-to}}</li>
-      <li>{{#link-to 'about'}}About{{/link-to}}</li>
-      <li>{{#link-to 'contact'}}contact{{/link-to}}</li>
-    </ul>
-  </nav>
-  
-  This is where the about me goes! I'm dracula! grr!
-</div>
+
+<p>This is where the about me goes! I'm dracula! grr!</p>
+
+<button class="btn btn-primary" {{action 'showRealName'}}>Click here to learn dracula's real name</button>
+
+
+{{#if isPictureShowing}}
+  <button class="btn btn-primary" {{action 'hidePicture'}}>Hide the scary face!</button>
+  <p><img src="http://www.blastr.com/sites/blastr/files/styles/blog_post_media/public/DraculaLugosi.jpg?itok=UDvDyUdp"></p>
+
+{{else}}
+  <button class="btn btn-info" {{action 'showPicture'}}>Click to see a picture</button>
+
+{{/if}}
