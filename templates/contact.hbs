@@ -1,30 +1,29 @@
-
 <h1>Contact</h1>
 
 <div class="row">
 
-<div class="col-md-6">
-  <p>
-    Want to get in touch?
-  </p>
-  <ul>
-    <li>{{#link-to 'phone'}}Phone{{/link-to}}</li>
-    <li>{{#link-to 'email'}}Email{{/link-to}}</li>
-  </ul>
-
-  {{#if messageSent}}
-    <p>Thank you for sending a message to dracula! Your delivery confirmation number is {{confirmationNumber}}.</p>
-
-  {{else}}
+  <div class="col-md-6">
     <p>
-      Or, <a href="#" {{action 'sendMessage'}}>click here</a> to send a secret message.
+      Want to get in touch?
     </p>
+    <ul>
+      <li>{{#link-to 'phone'}}Phone{{/link-to}}</li>
+      <li>{{#link-to 'email'}}Email{{/link-to}}</li>
+    </ul>
 
-  {{/if}}
-</div>
+    {{#if messageSent}}
+      <p>Thank you for sending a message to dracula! Your delivery confirmation number is {{confirmationNumber}}.</p>
 
-<div class="col-md-6">
-  {{outlet}}
-</div>
+    {{else}}
+      <p>
+        Or, <a href="#" {{action 'sendMessage'}}>click here</a> to send a secret message.
+      </p>
+
+    {{/if}}
+  </div>
+
+  <div class="col-md-6">
+    {{outlet}}
+  </div>
 
 </div>
